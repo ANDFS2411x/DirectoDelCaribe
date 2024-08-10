@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directo Del Caribe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Directo Del Caribe</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Bienvenidos a Directo Del Caribe</h2>
+        <p>Explora lo mejor de los productos típicos del Caribe.</p>
+    </section>
+
+    <section id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="product-list">
+            <div class="product" style="background-image: url('p1.webp');">
+                <h3>Sombrero Vueltiao</h3>
+                <p>$25.00</p>
+                <button onclick="addToCart('Sombrero Vueltiao', 25)">Comprar</button>
+            </div>
+            <div class="product" style="background-image: url('p2.webp');">
+                <h3>Mochila Wayuu</h3>
+                <p>$45.00</p>
+                <button onclick="addToCart('Mochila Wayuu', 45)">Comprar</button>
+            </div>
+            <div class="product" style="background-image: url('p3.webp');">
+                <h3>Utensilios Tropicales</h3>
+                <p>$30.00</p>
+                <button onclick="addToCart('Utensilios Tropicales', 30)">Comprar</button>
+            </div>
+            <div class="product" style="background-image: url('p4.webp');">
+                <h3>Café Caribeño</h3>
+                <p>$15.00</p>
+                <button onclick="addToCart('Café Caribeño', 15)">Comprar</button>
+            </div>
+            <div class="product" style="background-image: url('p5.webp');">
+                <h3>Ron Caribeño</h3>
+                <p>$25.00</p>
+                <button onclick="addToCart('Ron Caribeño', 25)">Comprar</button>
+            </div>
+            <div class="product" style="background-image: url('p6.webp');">
+                <h3>Coco Deshidratado</h3>
+                <p>$10.00</p>
+                <button onclick="addToCart('Coco Deshidratado', 10)">Comprar</button>
+            </div>
+        </div>
+    </section>
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="cart">
+            <p>El carrito está vacío.</p>
+        </div>
+    </section>
+    
+    
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Directo Del Caribe es una plataforma que conecta productores locales con consumidores globales, promoviendo la riqueza cultural del Caribe.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+            <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Directo Del Caribe. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
